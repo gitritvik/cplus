@@ -19,7 +19,7 @@ using namespace std;
 
 int main(){
 
-    int N, num1=0, num2= 1, sum;
+    int N, num1=0, num2= 1, sum=0;
 
     cout<<"Enter the term N till where you want to find the fibonacci series- ";
     cin>>N;
@@ -28,8 +28,7 @@ int main(){
 
     for(int i=1; i<=N; i++){
 
-
-        
+      
         if(i==1)
         cout<<num1<<", ";
         else if(i==2)
