@@ -36,6 +36,8 @@ int main(){
         num2= sum;
 
         cout<<sum<<", ";
+
+        // this line is mandetory to go out of loop.
         sum= num1+num2;
 
     }
