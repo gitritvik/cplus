@@ -29,12 +29,12 @@ int main(){
     cout<<"dvend=  "<<dvend<<endl;
     cout<<"divsr= "<<divsr<<endl;
 
-    // remdr = dvend%divsr;
+    remdr = dvend%divsr;
 
     // cout<<"remdr == "<<remdr<<endl;
     
 
-    for(remdr=0; remdr==0;remdr = dvend%divsr ){
+    for(remdr=0; remdr==0;remdr = dvend % divsr ){
 
         dvend= divsr;
         divsr= remdr;
