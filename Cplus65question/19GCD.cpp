@@ -9,6 +9,9 @@
 // Outputs the GCD (HCF) of the two numbers.
 
 
+
+
+
 #include <iostream>
 using namespace std;
 
