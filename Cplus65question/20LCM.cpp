@@ -2,6 +2,15 @@
 // by user
 
 
+// How it works-
+// First of all it take two integers from the user and based on the logic that LCM can not be less than greatest no. and can not be more than the multiplication of the both numnbers
+// 
+
+// The second method uses formula to find the LCM
+// The formula is- (First no. X second no. = HCF X LCM)
+
+// This is the first method of finding the GCD or HCF
+
 #include <iostream>
 using namespace std;
 
