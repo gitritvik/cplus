@@ -1,6 +1,12 @@
-// 6) Write a Program to Find GCD or HCF of two numbers
-// entered by user
+// Find GCD (HCF) of Two Numbers
+// Description:
+// This program calculates the Greatest Common Divisor (GCD) or Highest Common Factor (HCF) of two user-provided integers using the Euclidean Algorithm.
 
+// How It Works
+// Takes two integers as input from the user.
+// Determines the larger number as the dividend and the smaller number as the divisor.
+// Uses a loop to compute the remainder and update the dividend and divisor until the remainder is 0.
+// Outputs the GCD (HCF) of the two numbers.
 
 
 #include <iostream>
@@ -16,8 +22,15 @@ int main(){
     cout<<"Enter the second no.- ";
     cin>>num2;
 
+    if(num1== 0 && num2== 0){
 
-    if(num1>num2){
+        cout<<"Both no. can't be zero. Plese Retry";
+
+        return 0;
+
+
+            }
+    else if(num1>num2){
     dvend= num1;
     divsr= num2;
     }
@@ -25,27 +38,17 @@ int main(){
     dvend= num2;
     divsr= num1;  
     }
-
-    cout<<"dvend=  "<<dvend<<endl;
-    cout<<"divsr= "<<divsr<<endl;
-
-    remdr = dvend%divsr;
-
-    // cout<<"remdr == "<<remdr<<endl;
     
 
-    for(remdr=0; remdr==0;remdr = dvend % divsr ){
+    for(remdr=dvend % divsr; remdr!=0;remdr = dvend % divsr ){
 
         dvend= divsr;
         divsr= remdr;
 
-    
-    cout<<"dvend=  "<<dvend<<endl;
-    cout<<"divsr= "<<divsr<<endl;
     }
 
 
-    cout<<"HCF is- "<<remdr;   
+    cout<<"HCF is- "<<divsr;   
     
     
     return 0;
