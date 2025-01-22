@@ -1,6 +1,18 @@
 //Write a Program to Reverse a given Number N by user
 
 
+// Input:
+//       - Enter the Number of which you want the Reverse-  ; 
+        //input- 5678
+
+// Output:
+//       - It will print Reverse of the number.
+        //Output- 8765
+// Usage:
+//       Compile the program and run it. Enter the non- negatvie no. as prompted.
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -10,9 +22,7 @@ int main(){
 
     cout<<"Enter the of which you want the Reverse- ";
     cin>>N;
-
     
-
     while(N != 0){
         rev= rev + (N%10);
         rev= rev*10;
