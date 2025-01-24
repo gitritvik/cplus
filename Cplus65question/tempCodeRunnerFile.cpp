@@ -1,1 +1,1 @@
- // remdr = dvend%divsr;
+rev= rev*10;

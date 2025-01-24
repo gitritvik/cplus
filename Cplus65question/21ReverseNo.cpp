@@ -24,12 +24,12 @@ int main(){
     cin>>N;
     
     while(N != 0){
-        rev= rev + (N%10);
-        rev= rev*10;
+        rev= rev*10 + (N%10);
+
         N= N/10;
     }
 
-    cout<<"Revrse is- "<<rev/10;
+    cout<<"Revrse is- "<<rev;
 
     return 0;
 }
