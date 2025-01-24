@@ -29,17 +29,17 @@ int main(){
 
     while(N != 0){
 
-        rev= rev+ N%10;
-        rev= rev*10;
+        rev= rev*10+ N%10;
+    
         N = N/10;
 
 
     }
 
-    if(test == rev/10)
-    cout<<"No. entered by you is a Palindrom Number";
+    if(test == rev)
+    cout<<"NO! Number entered by you is a Palindrom Number";
     else
-    cout<<"No. entered by you is NOT a Palindrom Number" ;   
+    cout<<"YES! Number entered by you is NOT a Palindrom Number" ;   
 
 
     return 0;
