@@ -18,16 +18,22 @@ int main(){
     cout<<"Enter the Second limit- ";
     cin>>n2;
 
-    for(int i= n1; i<= n2; i++){
+     
 
-        for(int j= 2; j<=i/2; j++){
-            if(i%j == 0 ){}
+    for(n1; n1<=n2; n1++){
+       
+        for(int j= 2; j<=(n1/2); j++){
+            if(n1%j==0){
+
+               
+                 
+            }
+
+            cout<<n1<<", ";
         }
-
     }
 
-    cout<<
-
+    
 
     return 0;
 }
