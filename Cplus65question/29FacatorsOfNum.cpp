@@ -22,12 +22,19 @@ int main(){
 
     cout<<"Enter the no. of Which you want the Factor- ";
     cin>>num;
+    cout<<"Factors of given no are- ";
 
-    for(int i; i<num; i++){
-        if(i)
+
+    for(int i=1; i<= num/2; i++){
+        if(num % i == 0 ){
+            cout<<i<<" ";
+        }
+
+        
+       
     }
-
     
+    cout<< num;
 
 
     return 0;
