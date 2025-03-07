@@ -2,6 +2,22 @@
 // An Armstrong number is a number that is equal to the sum of its digits, each raised to the power of the number of digits. For example, 153 is an Armstrong number because (1 × 1 × 1) + (5 × 5 × 5) + (3 × 3 × 3) equals 153. Another example is 370, where 333 + 777 + 000 equals 370.
 
 
+// 12) Write a Program to Check Whether a Number N
+// entered by user is Armstrong or Not
+
+
+// Input:
+//       Enter an number for which you want to know weather it is a Armstrong or not.
+        //input- 153
+
+// Output:
+//       - It will print Yes if your no. is palindrom, It will print NOT if Number is not Armstrong.
+        //Output- yes
+// Usage:
+//       Compile the program and run it. Enter the as prompted.
+
+
+
 
 
 #include <iostream>
@@ -31,10 +47,7 @@ int main(){
         sum= sum+ round(pow(temp%10, digit));
         temp= temp/10;
 
-
     }
-    
- 
 
     if(n == sum)
     cout<<"Given no. is an Armstrong no.";
