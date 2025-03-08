@@ -17,11 +17,11 @@ int main(){
     for(int i= 0; i<m; i++){
         cout<<endl;
         for(int j= 0; i<n; i++){
-            if((i==1 || i== (n-1)) && (j==1 || j == (m-1)) ){
-                break;
+            if((i==1 || i== (m-1)) && (j==1 || j == (n-1)) ){
+                cout<<" * ";
             }
             else{
-                cout<<" * ";
+                break;
             }
         }
     }
