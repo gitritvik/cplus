@@ -3,32 +3,34 @@
 // *            *
 // *  *  *  *  *
 
-
-
 #include <iostream>
 using namespace std;
 
+
 int main(){
 
-    int m, n;
-    cout<<"To print a Pattern in row(m) X coulum(n) Please Enter the value of M  and N : ";
-    cin>>m>>n;
+    int i, j, m, n;
 
-    for(int i= 0; i<m; i++){
-        cout<<endl;
-        for(int j= 0; i<n; i++){
-            if((i==1 || i== (m-1)) && (j==1 || j == (n-1)) ){
+    cout<<"Enter the no. of row and no. of column- M and N: ";
+    cin>>m>>n;
+    cout<<"The hollow Rectangle is Here- "<<endl;
+
+    // I drew a solid star pattern
+    // Wrote the (i,j) values of the respecive stars then 
+    // find out what logic can be introduced to make it hollow 
+
+    for(i=1; i<=m; i++){
+        for(j=1; j<=n; j++){
+            if(i== 1 || j== 1 || i== m || j== n){
                 cout<<" * ";
             }
             else{
-                break;
+                cout<<"   ";
             }
+            
         }
+        cout<<endl;
     }
-
-    
-
-
 
 
     return 0;
