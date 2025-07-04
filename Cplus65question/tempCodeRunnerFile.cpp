@@ -1,0 +1,2 @@
+
+        if(torpidos>0){

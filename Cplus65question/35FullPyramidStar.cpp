@@ -16,6 +16,9 @@ int main(){
 
     for(i=1; i<=h; i++){
         for(j=1; j<=h; j++){
+
+            
+            
             
         }
     }
